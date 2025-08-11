@@ -56,3 +56,12 @@ SETA VAZIA E CHEIA VIRA HERANÇA
 SETA VAZIA PONTILHADA VIRA INTERFACE
 
 DESIGN PARTTERNS são soluções facieies
+
+Principio de inversão de dependencias ao inves de depender de uma classe concreta você depende da interface - uma interface é uma dependecia com abstração - classe cliente é um controlador - serviceimpl implementações concretas
+Controlador > ClienteServ < ClientServiceIMPL save(c) delete(c)
+
+Herança não é solução para todos os problemas
+
+Demeter -> um método pode chamar APENAS os seguintes outros métodos: - da sua própria classe - de objetos passados como parâmetros (o famoso "()") - de objetos criados pelo próprio método - de atributos (variáveis) da classe do método
+
+Padrão Aberto/Fechado -> a classe deve estar aberta para extensões e fechada para modificações. Tem como objetivo a construção de classes flexíveis e extensíveis, capazes de se adaptarem a diversos cenários de uso, sem modificar seu código fonte. Interface não tem código, é um contrato que diz o código que deve ter
