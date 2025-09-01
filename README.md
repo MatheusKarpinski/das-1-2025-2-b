@@ -85,6 +85,7 @@ static - é carregado primeiro na memória
 # 01/09/2025
 
 Características da arquitetura são requisitos não funcionais
+
 Expectativas de um Arquiteto de Software:
   -Tomar Decisões de Arquitetura: Orientação é a palavra de ordem em primeiro plano. Ele(arquiteto) é o cabeça da equipe e por isso orienta o que eles devem fazer.
   -Analisar Continuamente a Arquitetura (software é vivo): deve analisar continuamente a arquitetura e o ambiente de tecnologia atual, para então recomendar soluções de melhorias. Pensar nas evoluções e aplicá-las
