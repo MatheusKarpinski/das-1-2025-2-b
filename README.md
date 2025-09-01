@@ -87,13 +87,13 @@ static - é carregado primeiro na memória
 Características da arquitetura são requisitos não funcionais
 
 Expectativas de um Arquiteto de Software:
-  -Tomar Decisões de Arquitetura: Orientação é a palavra de ordem em primeiro plano. Ele(arquiteto) é o cabeça da equipe e por isso orienta o que eles devem fazer.
-  -Analisar Continuamente a Arquitetura (software é vivo): deve analisar continuamente a arquitetura e o ambiente de tecnologia atual, para então recomendar soluções de melhorias. Pensar nas evoluções e aplicá-las
-  -Manter-se atualizado com as últimas tendências
-  -Assegurar a conformidade com as decisões
-  -Exposição e experiência com as decisões
-  -Ter conhecimento sobre o domínio do negócio
-  -Ter Habilidades Interpessoais: trabalho em equipe, facilitação e liderança. Um arquiteto não deve apenas dar uma orientação técnica para a equipe, mas também liderar as equipes de desenvolvimento na implementação da arquitetura.
+-Tomar Decisões de Arquitetura: Orientação é a palavra de ordem em primeiro plano. Ele(arquiteto) é o cabeça da equipe e por isso orienta o que eles devem fazer.
+-Analisar Continuamente a Arquitetura (software é vivo): deve analisar continuamente a arquitetura e o ambiente de tecnologia atual, para então recomendar soluções de melhorias. Pensar nas evoluções e aplicá-las
+-Manter-se atualizado com as últimas tendências
+-Assegurar a conformidade com as decisões
+-Exposição e experiência com as decisões
+-Ter conhecimento sobre o domínio do negócio
+-Ter Habilidades Interpessoais: trabalho em equipe, facilitação e liderança. Um arquiteto não deve apenas dar uma orientação técnica para a equipe, mas também liderar as equipes de desenvolvimento na implementação da arquitetura.
   -Entender e Lidar Bem com Questões Políticas: Um arquiteto deve entender o clima político da empresa e conseguir lidar bem com ele.
   
 Manter-se Atualizado com as Últimas Tendências: Um arquiteto deve ficar atualizado com as últimas tendências da tecnologia.
