@@ -77,7 +77,43 @@ Interface não tem código, é um contrato que diz o código que deve ter
 
 # 18/08/2025
 
-SOLID - Princiipio de Liskov substituir um filho por outro sem ter percas
+SOLID - Princípio de Liskov substituir um filho por outro sem ter percas
 
 static - é carregado primeiro na memória
+
+
+# 01/09/2025
+
+Características da arquitetura são requisitos não funcionais
+Expectativas de um Arquiteto de Software:
+  -Tomar Decisões de Arquitetura: Orientação é a palavra de ordem em     primeiro plano. Ele(arquiteto) é o cabeça da equipe e por isso        orienta o que eles devem fazer.
+  -Analisar Continuamente a Arquitetura (software é vivo): deve          analisar continuamente a arquitetura e o ambiente de tecnologia       atual, para então recomendar soluções de melhorias. Pensar nas        evoluções e aplicá-las (software é vivo)
+  -Manter-se atualizado com as últimas tendências
+  -Assegurar a conformidade com as decisões
+  -Exposição e experiência com as decisões
+  -Ter conhecimento sobre o domínio do negócio
+  -Ter Habilidades Interpessoais: trabalho em equipe, facilitação e      liderança. Um arquiteto não deve apenas dar uma orientação técnica    para  a equipe, mas também liderar as equipes de desenvolvimento      na implementação da arquitetura.
+  -Entender e Lidar Bem com Questões Políticas: Um arquiteto deve        entender o clima político da empresa e conseguir lidar bem com ele.
+  
+Manter-se Atualizado com as Últimas Tendências: Um arquiteto deve ficar atualizado com as últimas tendências da tecnologia.
+
+Assegurar a Conformidade com as Decisões: Análise Estática de Código é uma das ferramentas para assegurar suas decisões.
+
+Ter Conhecimento sobre o Domínio do Negócio: conhecimento técnico amplo e prático, além de um bom conhecimento
+
+DevOps: entregar valor mais rápido possível ao cliente. 
+Continuous Integrations: Planejar -> Criar -> Integração Contínua -> Implantar -> Operar -> Comentários Contínuos (FeedBack do cliente final) -> Planejar (DevOps é um loop infinito).
+Ao adotar práticas de DevOps:
+  -Você reduz o tempo de ciclo trabalhando em lotes menores.
+  -Usando mais automação.
+  -Protegendo seu pipeline de lançamento.
+  -Melhorando sua telemetria.
+  -Implantação com mais frequência.
+https://learn.microsoft.com/pt-br/training/modules/introduction-to-devops/2-what-is-devops?ns-enrollment-type=learningpath&ns-enrollment-id=learn.wwl.az-400-work-git-for-enterprise-devops 
+
+
+
+
+
+
 
