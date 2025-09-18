@@ -19,7 +19,7 @@ Desorganização do código do projeto;
 Objetos
 Para a resolução destes problemas, deve-se pensar em todas as partes deste sistema em objetos, seja seus dados(entidade), sua logica(service), o banco de dados(repository), a interface(controller) e as telas(interface).
 
-# Conjunto de boas práticas:
+# Conjunto de boas práticas
 
  - Padronizar nomenclatura de variáveis: Quando o sistema usa padrão de nomes para variáveis (maiusculas e minusculas).
 
@@ -29,9 +29,9 @@ Para a resolução destes problemas, deve-se pensar em todas as partes deste sis
 
 # Ocultamento de Informações
 Projetamos o sistema, fizemos as abstrações, escondemos as informações (complexidade) através da API e expomos apenas a Interface para o consumidor final. Na POO Esse ocultamento ocorre nas Classes (ex: quando colocamos Private). Vantagens do Ocultamento de Informações:
- -> Desenvolvimento em paralelo
- -> Flexibilidade a mudanças
- -> Facilidade de entendimento
+ - Desenvolvimento em paralelo
+ - Flexibilidade a mudanças
+ - Facilidade de entendimento
 
 # Aula 06/08/2025
 
