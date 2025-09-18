@@ -21,13 +21,17 @@ Para a resolução destes problemas, deve-se pensar em todas as partes deste sis
 
 # Conjunto de boas práticas:
 
- - Padronizar nomenclatura de variáveis:Quando o sistema usa padrão de nomes para variáveis.
+ - Padronizar nomenclatura de variáveis: Quando o sistema usa padrão de nomes para variáveis (maiusculas e minusculas).
 
-# Identação
-E importante aprender também como escrever seus códigos de forma que fique legível tanto para os outros quanto para você mesmo caso queira refatorar ou realizar a manutenção de seus códigos.
+ - Identação: É importante aprender também como escrever seus códigos de forma que fique legível tanto para os outros quanto para você mesmo caso queira refatorar ou realizar a manutenção de seus códigos.
 
-# Frameworks
-Aprender ao menos um framework pode acabar sendo importante para quem deseja trabalhar com desenvolvimento de softwares, pelas facilidades que estas ferramentas pode te trazer futuramente seja na criação de seus próprios projetos quanto na adaptabilidade de frameworks utilizados pelas empresas.
+ - Frameworks (ex: Spring): É de suma importância escolher corretamente o Framework que você irar utilizar no seu software. Aprender ao menos um framework é importante para quem deseja trabalhar com desenvolvimento de softwares, pelas facilidades que estas  ferramentas podem trazer futuramente, seja na criação de seus próprios projetos quanto na adaptabilidade de frameworks utilizados pelas empresas.
+
+# Ocultamento de Informações
+Projetamos o sistema, fizemos as abstrações, escondemos as informações (complexidade) através da API e expomos apenas a Interface para o consumidor final. Na POO Esse ocultamento ocorre nas Classes (ex: quando colocamos Private). Vantagens do Ocultamento de Informações:
+ -> Desenvolvimento em paralelo
+ -> Flexibilidade a mudanças
+ -> Facilidade de entendimento
 
 # Aula 06/08/2025
 
@@ -151,3 +155,4 @@ Como é a formação do conhecimento de um arquiteto modelo T: Um arquiteto de s
 Arquitetura MVC - Model, View, Control
 API - Application Programming Interface
 POO (básico) - Objetos contem informações (variáveis/atributos). Contem as ações = funções (métodos). Um objeto pode conter outros objetos (ManyToOne/OneToMany e etc). Em POO é possível representar qualquer coisa do mundo real
+Desacoplamento - Quando o código é mais fácil de trocar/substituir. Por exemplo, o Controlador chama o Service, porém toda a lógica do Service está em outro arquivo.
