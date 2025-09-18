@@ -156,4 +156,4 @@ Como é a formação do conhecimento de um arquiteto modelo T: Um arquiteto de s
 - Arquitetura MVC - Model, View, Control
 - API - Application Programming Interface
 - POO (básico) - Objetos contem informações (variáveis/atributos). Contem as ações = funções (métodos). Um objeto pode conter outros objetos (ManyToOne/OneToMany e etc). Em POO é possível representar qualquer coisa do mundo real
-- Desacoplamento - Quando o código é mais fácil de trocar/substituir. Por exemplo, o Controlador chama o Service, porém toda a lógica do Service está em outro arquivo.
+- Desacoplamento - Quando o código é mais fácil de trocar/substituir.
