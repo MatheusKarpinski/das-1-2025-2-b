@@ -1,7 +1,7 @@
 # Livros:
-[Livro Eng Soft Moderna CAP 5](https://engsoftmoderna.info/cap5.html)
-[Livro Eng Soft Moderna CAP 7](https://engsoftmoderna.info/cap7.html)
-[Livro Fundamentos da Arquitetura de Software](https://integrada.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/2[%3Bvnd.vst.idref%3Dcover]!/4/2/2%4051:77)
+- [Livro Eng Soft Moderna CAP 5](https://engsoftmoderna.info/cap5.html)
+- [Livro Eng Soft Moderna CAP 7](https://engsoftmoderna.info/cap7.html)
+- [Livro Fundamentos da Arquitetura de Software](https://integrada.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/2[%3Bvnd.vst.idref%3Dcover]!/4/2/2%4051:77)
 
 
 
