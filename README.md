@@ -28,7 +28,8 @@ Para a resolução destes problemas, deve-se pensar em todas as partes deste sis
  - Frameworks (ex: Spring): É de suma importância escolher corretamente o Framework que você irar utilizar no seu software. Aprender ao menos um framework é importante para quem deseja trabalhar com desenvolvimento de softwares, pelas facilidades que estas  ferramentas podem trazer futuramente, seja na criação de seus próprios projetos quanto na adaptabilidade de frameworks utilizados pelas empresas.
 
 # Ocultamento de Informações
-Projetamos o sistema, fizemos as abstrações, escondemos as informações (complexidade) através da API e expomos apenas a Interface para o consumidor final. Na POO Esse ocultamento ocorre nas Classes (ex: quando colocamos Private). Vantagens do Ocultamento de Informações:
+Projetamos o sistema, fizemos as abstrações, escondemos as informações (complexidade) através da API e expomos apenas a Interface para o consumidor final. Na POO esse ocultamento ocorre nas Classes (ex: quando colocamos Private nela). 
+Vantagens do Ocultamento de Informações:
  - Desenvolvimento em paralelo
  - Flexibilidade a mudanças
  - Facilidade de entendimento
