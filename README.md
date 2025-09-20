@@ -34,28 +34,27 @@ Vantagens do Ocultamento de Informações:
  - Flexibilidade a mudanças
  - Facilidade de entendimento
 
-# Aula 06/08/2025
-
-# Estrutura de dados
-Assim como entender as partes das classes é importante também é importante entender como estas variáveis objetos são guardadas e manuseadas Como em filas, pilhas, arvores, grafos, métodos, laços, etc... 
-
-# Flexibilidade de código
-Cada código que um desenvolvedor escreve deve trazer consigo a possibilidade de ser modificado e adaptado facilmente sem que o código inteiro quebre. Por exemplo: Separar estas classes utilizando classes de interface que não carregam a logica do sistema consigo mas que podem ser substituídas no código.
-
-getter e setter = encapsulamento =  proteger a informação;
+# Aula 04/08/2025
 
 # Coesão
-Coesão é um atributo/caracteristca que a gente busca enquanto programa.
-Toda classe/metódo deve ser responsável por uma unica funcionalidade, cumprir apenas seu proposito, faz algo decente e bem feito aquilo que foi designado.
+Coesão é uma característica essencial na programação: cada classe ou método deve ser responsável por apenas uma funcionalidade ou serviço, contendo apenas o código necessário para executar bem uma tarefa.
+Vantagens da coesão:
+- Facilita a implementação de uma classe, bem como o seu entendimento e manutenção
+- Facilita a alocação de um único responsável por manter uma classe
+- Facilita o reúso e teste de uma classe, pois é mais simples reusar e testar uma classe coesa do que uma classe com várias responsabilidades
+
+# Acoplamento
+É basicamenta "amarrar" duas classes, em que uma depende da outra, se eu apagar algo da classe A por exemplo, ela afeta a classe B. Obs: é importânte tentar reduzir ao máxima os casos de acoplamento, porém nem sempre irá ser possível.
+
+# Estrutura de dados
+Assim como entender as partes das classes é importante, também é importante entender como estas variáveis objetos são guardadas e manuseadas Como em filas, pilhas, arvores, grafos, métodos, laços, etc... 
+
+# Flexibilidade de código
+Cada código que um desenvolvedor escreve deve trazer consigo a possibilidade de ser modificado e adaptado facilmente sem que o código inteiro quebre. Por exemplo: Separar classes utilizando classes de interface que não carregam a lógica do sistema consigo mas que podem ser substituídas futuramente.
 
 # Aula 07/08/2025
 
-entity < dados
-repository < JPA spring data
-services < lógica(user cases)
-controller < api rest
-
-SOLID = programar orientado a objetos do jeito certo
+SOLID = programar orientado a objetos do jeito certo.
 
 Single Responsbility Principle
 Open/Closed Principle
@@ -63,7 +62,7 @@ Liskov Substitutiom Principle
 Interface Segregation Principle
 Dependency Inversion Principle
 
-Principo da responsabilidade unica esse principio é uma aplicação direta da ideia de coesâo, deve existir um único motivo para modificar qualquer classe em um sistema, ou seja, possui um objetivo concreto inalteravel.
+Principo da responsabilidade única esse principio é uma aplicação direta da ideia de coesâo, deve existir um único motivo para modificar qualquer classe em um sistema, ou seja, possui um objetivo concreto inalteravel.
 
 Principio da Segregação de Interfaces se eu quero ouvir o click de um botão eu tenho uma interface pra isso, se eu quero capturar o movimento do mouse eu tenho outra inteface para isso
 
@@ -71,7 +70,7 @@ SETA FECHADA E CHEIA VIRA VARIAVEL
 SETA VAZIA E CHEIA VIRA HERANÇA
 SETA VAZIA PONTILHADA VIRA INTERFACE
 
-DESIGN PARTTERNS são soluções facieies
+DESIGN PATTERNS são soluções fáceis
 
 # Aula 11/08/2025
 
@@ -157,3 +156,9 @@ Como é a formação do conhecimento de um arquiteto modelo T: Um arquiteto de s
 - API - Application Programming Interface
 - POO (básico) - Objetos contem informações (variáveis/atributos). Contem as ações = funções (métodos). Um objeto pode conter outros objetos (ManyToOne/OneToMany e etc). Em POO é possível representar qualquer coisa do mundo real
 - Desacoplamento - Quando o código é mais fácil de trocar/substituir.
+- Classe - guardam o estado (variáveis que guardam informações (nome,email,telefone,etc)), e o comportamento (métodos e funções)
+- Getter e Setter - serve para encapsular uma informação e consequentemente protegê-la
+- entity < dados
+  repository < JPA spring data
+  services < lógica(user cases)
+  controller < api rest
