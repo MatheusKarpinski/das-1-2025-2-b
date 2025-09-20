@@ -159,6 +159,6 @@ Como é a formação do conhecimento de um arquiteto modelo T: Um arquiteto de s
 - Classe - guardam o estado (variáveis que guardam informações (nome,email,telefone,etc)), e o comportamento (métodos e funções)
 - Getter e Setter - serve para encapsular uma informação e consequentemente protegê-la
 - entity < dados
-  repository < JPA spring data
-  services < lógica(user cases)
-  controller < api rest
+- repository < JPA spring data
+- services < lógica(user cases)
+- controller < api rest
