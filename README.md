@@ -15,11 +15,11 @@ Portanto, softwares tem o objetivo de abstrair a complexidade de problemas reais
 Instrumentos clássicos de abstração: funções, classes, interfaces, pacotes e bibliotecas.
 
 # Um grande inimigo: Complexidade
-Dificuldades no entendimento da solução desejada;
-Potenciais bugs pela quantidade de coisas que devem ser levadas em consideração na criação do software;
-Desorganização do código do projeto;
-Objetos
-Para a resolução destes problemas, deve-se pensar em todas as partes deste sistema em objetos, seja seus dados(entidade), sua logica(service), o banco de dados(repository), a interface(controller) e as telas(interface).
+- Dificuldades no entendimento da solução desejada;
+- Potenciais bugs pela quantidade de coisas que devem ser levadas em consideração na criação do software;
+- Desorganização do código do projeto;
+- Objetos
+- Para a resolução destes problemas, deve-se pensar em todas as partes deste sistema em objetos, seja seus dados(entidade), sua logica(service), o banco de dados(repository), a interface(controller) e as telas(interface).
 
 # Conjunto de boas práticas
 
