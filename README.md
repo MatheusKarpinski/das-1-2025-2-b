@@ -56,19 +56,11 @@ Cada código que um desenvolvedor escreve deve trazer consigo a possibilidade de
 
 SOLID = programar orientado a objetos do jeito certo.
 
-Single Responsbility Principle
+Single Responsbility Principle (Principo da Responsabilidade Única): Esse principio é uma aplicação direta da ideia de coesâo. Deve existir um único motivo para modificar qualquer classe em um sistema, ou seja, possui um objetivo concreto inalteravel.
 Open/Closed Principle
 Liskov Substitutiom Principle
-Interface Segregation Principle
+Interface Segregation Principle (Principio da Segregação de Interfaces): Toda comunicação do nosso sistema deveria acontecer através de interfaces, e cada interface deveria ter uma Responsabilidade Única. Por exemplo, se eu quero registrar o click de um botão, é necessário uma interface para isso, se eu quero capturar o movimento do mouse, é necessário outra inteface.
 Dependency Inversion Principle
-
-Principo da responsabilidade única esse principio é uma aplicação direta da ideia de coesâo, deve existir um único motivo para modificar qualquer classe em um sistema, ou seja, possui um objetivo concreto inalteravel.
-
-Principio da Segregação de Interfaces se eu quero ouvir o click de um botão eu tenho uma interface pra isso, se eu quero capturar o movimento do mouse eu tenho outra inteface para isso
-
-SETA FECHADA E CHEIA VIRA VARIAVEL
-SETA VAZIA E CHEIA VIRA HERANÇA
-SETA VAZIA PONTILHADA VIRA INTERFACE
 
 DESIGN PATTERNS são soluções fáceis
 
@@ -162,3 +154,6 @@ Como é a formação do conhecimento de um arquiteto modelo T: Um arquiteto de s
 - repository < JPA spring data
 - services < lógica(user cases)
 - controller < api rest
+- SETA FECHADA E LINHA CHEIA VIRA VARIAVEL
+- SETA VAZIA E LINHA CHEIA VIRA HERANÇA
+- SETA VAZIA LINHA PONTILHADA VIRA INTERFACE
