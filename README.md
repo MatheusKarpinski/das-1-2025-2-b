@@ -56,7 +56,7 @@ Cada código que um desenvolvedor escreve deve trazer consigo a possibilidade de
 
 # Aula 07/08/2025
 
-SOLID = programar orientado a objetos do jeito certo.
+SOLID é programar orientado a objetos do jeito correto.
 
 - Single Responsbility Principle (Principo da Responsabilidade Única): Esse principio é uma aplicação direta da ideia de coesâo. Deve existir um único motivo para modificar qualquer classe em um sistema, ou seja, possui um objetivo concreto inalteravel.
   
