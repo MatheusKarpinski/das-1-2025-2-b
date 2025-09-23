@@ -2,6 +2,8 @@
 - [Livro Eng Soft Moderna CAP 5](https://engsoftmoderna.info/cap5.html)
 - [Livro Eng Soft Moderna CAP 7](https://engsoftmoderna.info/cap7.html)
 - [Livro Fundamentos da Arquitetura de Software](https://integrada.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/2[%3Bvnd.vst.idref%3Dcover]!/4/2/2%4051:77)
+- [Livro Código Limpo](https://integrada.minhabiblioteca.com.br/reader/books/9788550816043/pageid/0)
+- [Livro Padrões de Projeto](https://integrada.minhabiblioteca.com.br/reader/books/9788577800469/pageid/0)
 
 
 
@@ -61,8 +63,6 @@ Open/Closed Principle
 Liskov Substitutiom Principle
 Interface Segregation Principle (Principio da Segregação de Interfaces): Toda comunicação do nosso sistema deveria acontecer através de interfaces, e cada interface deveria ter uma Responsabilidade Única. Por exemplo, se eu quero registrar o click de um botão, é necessário uma interface para isso, se eu quero capturar o movimento do mouse, é necessário outra inteface.
 Dependency Inversion Principle
-
-DESIGN PATTERNS são soluções fáceis
 
 # Aula 11/08/2025
 
@@ -157,3 +157,4 @@ Como é a formação do conhecimento de um arquiteto modelo T: Um arquiteto de s
 - SETA FECHADA E LINHA CHEIA VIRA VARIAVEL
 - SETA VAZIA E LINHA CHEIA VIRA HERANÇA
 - SETA VAZIA LINHA PONTILHADA VIRA INTERFACE
+- DESIGN PATTERNS são soluções que foram criadas e documentadas em linguagem orientada a objetos para resolver problemas comuns durante o desenvolvimento de sistemas
