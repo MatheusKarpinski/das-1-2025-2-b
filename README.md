@@ -60,38 +60,31 @@ SOLID é programar orientado a objetos do jeito correto.
 
 - Single Responsbility Principle (Principo da Responsabilidade Única): Esse principio é uma aplicação direta da ideia de coesâo. Deve existir um único motivo para modificar qualquer classe em um sistema, ou seja, possui um objetivo concreto inalteravel.
   
-- Open/Closed Principle
+- Open/Closed Principle (Padrão Aberto/Fechado): Uma classe deve estar aberta para extensões e fechada para modificações. Tem como objetivo a construção de classes flexíveis e extensíveis, capazes de se adaptarem a diversos cenários de uso, sem modificar seu código fonte.
   
 - Liskov Substitutiom Principle
   
 - Interface Segregation Principle (Principio da Segregação de Interfaces): Toda comunicação do nosso sistema deveria acontecer através de interfaces, e cada interface deveria ter uma Responsabilidade Única. Por exemplo, se eu quero registrar o click de um botão, é necessário uma interface para isso, se eu quero capturar o movimento do mouse, é necessário outra inteface.
 
-- Dependency Inversion Principle
+- Dependency Inversion Principle (Principio de Inversão de Dependências): Uma classe cliente deve estabelecer dependências prioritariamente com abstrações e não com implementações concretas, pois abstrações (interfaces) são mais estáveis do que implementações concretas (classes). A ideia é então inverter as dependências: em vez de depender de classes concretas, clientes devem depender de interfaces. Fazer essa inversão reduz o acoplamento.
 
 # Aula 11/08/2025
 
-Principio de inversão de dependencias ao inves de depender de uma classe concreta você depende da interface - uma interface é uma dependecia com abstração - classe cliente é um controlador - serviceimpl implementações concretas  
-Controlador > ClienteServ < ClientServiceIMPL
-              save(c)
-              delete(c)
-              
-Herança não é solução para todos os problemas
+# Prefira Composição do que Herança
+Herança expõe para subclasses detalhes da implementação das classes pai. Logo diz-se que herança viola o encapsulamento das classes pai. Uma solução para isso é utilizar Associação (composição)
 
-Demeter -> um método pode chamar APENAS os seguintes outros métodos:
-          - da sua própria classe
-          - de objetos passados como parâmetros (o famoso "()")
-          - de objetos criados pelo próprio método
-          - de atributos (variáveis) da classe do método
+Quando usar herança: As subclasses nunca irão substituir uma com a outra. Caso contrário é recomendado utilizar Associação.
 
-Padrão Aberto/Fechado -> a classe deve estar aberta para extensões e fechada para modificações. Tem como objetivo a construção de classes flexíveis e extensíveis, capazes de se adaptarem a diversos cenários de uso, sem modificar seu código fonte.
-Interface não tem código, é um contrato que diz o código que deve ter
+# Demeter 
+Todo método deve chamar APENAS os seguintes outros métodos:
+- da sua própria classe
+- de objetos passados como parâmetros (o famoso "()")
+- de objetos criados pelo próprio método
+- de atributos (variáveis) da classe do método
 
 # Aula 18/08/2025
 
 SOLID - Princípio de Liskov substituir um filho por outro sem ter percas
-
-static - é carregado primeiro na memória
-
 
 # Aula 01/09/2025
 
@@ -162,3 +155,5 @@ Como é a formação do conhecimento de um arquiteto modelo T: Um arquiteto de s
 - SETA VAZIA E LINHA CHEIA VIRA HERANÇA
 - SETA VAZIA LINHA PONTILHADA VIRA INTERFACE
 - DESIGN PATTERNS são soluções que foram criadas e documentadas em linguagem orientada a objetos para resolver problemas comuns durante o desenvolvimento de sistemas
+- Interface não tem código, é um contrato que diz o código que deve ter.
+- Static - É carregado primeiro na memória
