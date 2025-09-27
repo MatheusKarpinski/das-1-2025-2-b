@@ -129,11 +129,11 @@ Entregar valor mais rápido possível ao cliente.
 Ciclo do DevOps também chamado de Continuous Integrations: Planejar -> Criar -> Integração Contínua -> Implantar -> Operar -> Comentários Contínuos (FeedBack do cliente final) -> Planejar (loop infinito).
 
 Ao adotar práticas de DevOps:
-  -Reduz o tempo de ciclo trabalhando em lotes menores.
-  -Usa mais automação.
-  -Protege seu pipeline de lançamento.
-  -Melhora sua telemetria.
-  -Implanta com mais frequência.
+-Reduz o tempo de ciclo trabalhando em lotes menores.
+-Usa mais automação.
+-Protege seu pipeline de lançamento.
+-Melhora sua telemetria.
+-Implanta com mais frequência.
   
 # Aula 04/09/2025
 
