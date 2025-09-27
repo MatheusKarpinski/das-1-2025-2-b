@@ -62,7 +62,7 @@ SOLID é programar orientado a objetos do jeito correto.
   
 - Open/Closed Principle (Padrão Aberto/Fechado): Uma classe deve estar aberta para extensões e fechada para modificações. Tem como objetivo a construção de classes flexíveis e extensíveis, capazes de se adaptarem a diversos cenários de uso, sem modificar seu código fonte.
   
-- Liskov Substitutiom Principle
+- Liskov Substitutiom Principle (Princípio de Substituição de Liskov): Os filhos mantem a assinatura dos métodos que recebeu do pai. Isso permite realizar trocas (substituições) entre os filhos sem quebrar o código.
   
 - Interface Segregation Principle (Principio da Segregação de Interfaces): Toda comunicação do nosso sistema deveria acontecer através de interfaces, e cada interface deveria ter uma Responsabilidade Única. Por exemplo, se eu quero registrar o click de um botão, é necessário uma interface para isso, se eu quero capturar o movimento do mouse, é necessário outra inteface.
 
@@ -82,9 +82,13 @@ Todo método deve chamar APENAS os seguintes outros métodos:
 - de objetos criados pelo próprio método
 - de atributos (variáveis) da classe do método
 
+# Aula 14/08/1025
+
+SOLID - Liskov
+
 # Aula 18/08/2025
 
-SOLID - Princípio de Liskov substituir um filho por outro sem ter percas
+- DESIGN PATTERNS são soluções que foram criadas e documentadas em linguagem orientada a objetos para resolver problemas comuns durante o desenvolvimento de sistemas
 
 # Aula 01/09/2025
 
@@ -154,6 +158,5 @@ Como é a formação do conhecimento de um arquiteto modelo T: Um arquiteto de s
 - SETA FECHADA E LINHA CHEIA VIRA VARIAVEL
 - SETA VAZIA E LINHA CHEIA VIRA HERANÇA
 - SETA VAZIA LINHA PONTILHADA VIRA INTERFACE
-- DESIGN PATTERNS são soluções que foram criadas e documentadas em linguagem orientada a objetos para resolver problemas comuns durante o desenvolvimento de sistemas
 - Interface não tem código, é um contrato que diz o código que deve ter.
 - Static - É carregado primeiro na memória
