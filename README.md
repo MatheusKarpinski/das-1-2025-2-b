@@ -98,53 +98,48 @@ SOLID - Liskov
 
 - Características da Arquitetura: São os requisitos não funcionais da Engenharia de Software (Disponibilidade, Segurança, Desempenho, Escalabilidade,etc...). É impossível escrever um programa que tenha todas as características arquiteturais, 100% certo, porém é de extrema importância hoje em dia priorizar Segurança do que os outros.
 
-- Decisões da Arquitetura: É quando o arquiteto toma as decisões de qual modelo de arquitetura o software vai utilizar, qual linguagem de programação, qual framework, etc...
+- Decisões da Arquitetura: É o arquiteto que toma as decisões de qual modelo de arquitetura o software vai utilizar, qual linguagem de programação, qual framework, etc...
 
-- Princípios do Design: São os conjuntos de boas práticas. É o SOLID, encapsulamento, baixo acoplamento, coesão e etc... 
+- Princípios do Design: São as regras básicas para manter a arquitetura funcionando, são os conjuntos de boas práticas. É o SOLID, encapsulamento, baixo acoplamento, coesão e etc...
+
+Quando o arquiteto comcluí esses 3 pilares, a estrutura base do software fica completa e pronta.
 
 # Aula 01/09/2025
 
 Expectativas de um Arquiteto de Software:
+  
+  -Tomar Decisões de Arquitetura: Orientação é a palavra de ordem em primeiro plano. Um arquiteto deve estabelecer as decisões da arquitetura e os princípios do design usados para orientar as decisões de tecnologia dentro da equipe.
+  
+  -Analisar Continuamente a Arquitetura: deve analisar continuamente a arquitetura e o ambiente de tecnologia atual, para então recomendar soluções de melhorias, pensar nas evoluções e aplicá-las.
+  
+  -Manter-se atualizado com as últimas tendências: Um arquiteto deve ficar atualizado com as últimas tendências da tecnologia.
+  
+  -Assegurar a conformidade com as decisões: Um arquiteto deve assegurar a conformidade com as decisões de arquitetura e os princípios de design. Significa que o arquiteto deve verificar continuamente se as equipes de desenvolvimento seguem as decisões da arquitetura e os princípios do design definidos, documentados e comunicados por ele.
+  
+  -Exposição e experiência com as decisões: Um arquiteto deve se expor a tecnologias, estruturas, plataformas e ambientes múltiplos e diversificados. Não significa que um arquiteto deve ser especialista em toda estrutura, plataforma e linguagem, mas deve estar familiarizado pelo menos com várias tecnologias.
 
-  -Tomar Decisões de Arquitetura: Orientação é a palavra de ordem em primeiro plano. O arquiteto é o cabeça da equipe e por isso orienta o que a equipe deve fazer.
+  -Ter conhecimento sobre o domínio do negócio: Um arquiteto deve ter certo nível de especialização no domínio do negócio. Os arquitetos de software eficientes entendem não apenas de tecnologia, mas do domínio do negócio no espaço do problema. Sem conhecimento do domínio do negócio, fica difícil entender o problema comercial, as metas e os requisitos, complicando planejar uma arquitetura eficiente para atender aos requisitos da empresa.
   
-  -Analisar Continuamente a Arquitetura (software é vivo): deve analisar continuamente a arquitetura e o ambiente de tecnologia atual, para então recomendar soluções de melhorias. Pensar nas evoluções e aplicá-las
-  -Manter-se atualizado com as últimas tendências
-  
-  -Assegurar a conformidade com as decisões
-  
-  -Exposição e experiência com as decisões
-
-  -Ter conhecimento sobre o domínio do negócio
-  
-  -Ter Habilidades Interpessoais: trabalho em equipe, facilitação e liderança. Um arquiteto não deve apenas dar uma orientação técnica para a equipe, mas também liderar as equipes de desenvolvimento na implementação da arquitetura.
+  -Ter Habilidades Interpessoais: Um arquiteto deve ter habilidades interpessoais excepcionais, inclusive trabalho em equipe, facilitação e liderança. Um arquiteto não deve apenas dar uma orientação técnica para a equipe, mas também liderar as equipes de desenvolvimento na implementação da arquitetura.
   
   -Entender e Lidar Bem com Questões Políticas: Um arquiteto deve entender o clima político da empresa e conseguir lidar bem com ele.
-  
-Manter-se Atualizado com as Últimas Tendências: Um arquiteto deve ficar atualizado com as últimas tendências da tecnologia.
+ 
+# DevOps 
+Entregar valor mais rápido possível ao cliente. 
+Ciclo do DevOps também chamado de Continuous Integrations: Planejar -> Criar -> Integração Contínua -> Implantar -> Operar -> Comentários Contínuos (FeedBack do cliente final) -> Planejar (loop infinito).
 
-Assegurar a Conformidade com as Decisões: Análise Estática de Código é uma das ferramentas para assegurar suas decisões.
-
-Ter Conhecimento sobre o Domínio do Negócio: conhecimento técnico amplo e prático, além de um bom conhecimento
-
-DevOps: entregar valor mais rápido possível ao cliente. 
-Continuous Integrations: Planejar -> Criar -> Integração Contínua -> Implantar -> Operar -> Comentários Contínuos (FeedBack do cliente final) -> Planejar (DevOps é um loop infinito).
 Ao adotar práticas de DevOps:
-  -Você reduz o tempo de ciclo trabalhando em lotes menores.
-  
-  -Usando mais automação.
-  
-  -Protegendo seu pipeline de lançamento.
-  
-  -Melhorando sua telemetria.
-  
-  -Implantação com mais frequência.
+  -Reduz o tempo de ciclo trabalhando em lotes menores.
+  -Usa mais automação.
+  -Protege seu pipeline de lançamento.
+  -Melhora sua telemetria.
+  -Implanta com mais frequência.
   
 # Aula 04/09/2025
 
-Arquiteto vs Desenvolvedor: Um arquiteto é responsavel pela definição do sistema que será usado, padrões e estilos que serão utilizados, linguagem, etc. Ja um desenvolvedor cuidará da parte interna depois da estruturação do projeto, os seus componentes que foram definidos. Nem sempre o que um arquiteto planejar vai funcionar da melhor forma na parte de desenvolvimento e nem sempre as aplicações que utilizarem no desenvolvimento vão estar dentro da definição inicial da arquitetura, para que a arquitetura e desenvolvimento funcionem da melhor forma o ideal é fazer com que a relação entre eles seja bidirecional com comunicação constante para as duas partes se adequem em um consenso.
+Arquiteto vs Desenvolvedor: Um arquiteto é responsavel pela definição do sistema que será usado, padrões e estilos que serão utilizados, linguagem, etc. Já um desenvolvedor cuidará da parte interna depois da estruturação do projeto, os seus componentes que foram definidos. Nem sempre o que um arquiteto planejar vai funcionar da melhor forma na parte de desenvolvimento e nem sempre as aplicações que utilizarem no desenvolvimento vão estar dentro da definição inicial da arquitetura. Para que a arquitetura e desenvolvimento funcionem da melhor forma o ideal é fazer com que a relação entre eles seja bidirecional com comunicação constante para que as duas partes entrem em um consenso.
 
-Arquitetura vs Design: Arquitetura é responsavel pelas caracteristicas do sistema, tanto como o estilo do sistema e as estruturas dos componentes. Design envolve a modeluação das classes utilizadas no sistema, assim como interface do usuario e contato direto com alterações no código-fonte.
+Arquitetura vs Design: Arquitetura é responsavel pelas caracteristicas do sistema, tanto como o estilo do sistema e as estruturas dos componentes. Design envolve a modelação das classes utilizadas no sistema, assim como interface do usuário e o contato direto com alterações no código-fonte.
 
 Como é a formação do conhecimento de um arquiteto modelo T: Um arquiteto de software deve ter uma boa amplitude técnica, ou seja, conhecer diversas áreas da programação. Porém ao mesmo tempo ele deve ter uma boa profundidade técnica, ou seja, conhecer bem cada área da programação de forma individual. Então, um bom arquiteto de software deve equilibrar seu conhecimento, saber muito e saber bem de cada coisa.
 
