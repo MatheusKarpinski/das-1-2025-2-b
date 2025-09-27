@@ -108,21 +108,21 @@ Quando o arquiteto comcluí esses 3 pilares, a estrutura base do software fica c
 
 Expectativas de um Arquiteto de Software:
   
-  -Tomar Decisões de Arquitetura: Orientação é a palavra de ordem em primeiro plano. Um arquiteto deve estabelecer as decisões da arquitetura e os princípios do design usados para orientar as decisões de tecnologia dentro da equipe.
+  - Tomar Decisões de Arquitetura: Orientação é a palavra de ordem em primeiro plano. Um arquiteto deve estabelecer as decisões da arquitetura e os princípios do design usados para orientar as decisões de tecnologia dentro da equipe.
   
-  -Analisar Continuamente a Arquitetura: deve analisar continuamente a arquitetura e o ambiente de tecnologia atual, para então recomendar soluções de melhorias, pensar nas evoluções e aplicá-las.
+  - Analisar Continuamente a Arquitetura: deve analisar continuamente a arquitetura e o ambiente de tecnologia atual, para então recomendar soluções de melhorias, pensar nas evoluções e aplicá-las.
   
-  -Manter-se atualizado com as últimas tendências: Um arquiteto deve ficar atualizado com as últimas tendências da tecnologia.
+  - Manter-se atualizado com as últimas tendências: Um arquiteto deve ficar atualizado com as últimas tendências da tecnologia.
   
-  -Assegurar a conformidade com as decisões: Um arquiteto deve assegurar a conformidade com as decisões de arquitetura e os princípios de design. Significa que o arquiteto deve verificar continuamente se as equipes de desenvolvimento seguem as decisões da arquitetura e os princípios do design definidos, documentados e comunicados por ele.
+  - Assegurar a conformidade com as decisões: Um arquiteto deve assegurar a conformidade com as decisões de arquitetura e os princípios de design. Significa que o arquiteto deve verificar continuamente se as equipes de desenvolvimento seguem as decisões da arquitetura e os princípios do design definidos, documentados e comunicados por ele.
   
-  -Exposição e experiência com as decisões: Um arquiteto deve se expor a tecnologias, estruturas, plataformas e ambientes múltiplos e diversificados. Não significa que um arquiteto deve ser especialista em toda estrutura, plataforma e linguagem, mas deve estar familiarizado pelo menos com várias tecnologias.
+  - Exposição e experiência com as decisões: Um arquiteto deve se expor a tecnologias, estruturas, plataformas e ambientes múltiplos e diversificados. Não significa que um arquiteto deve ser especialista em toda estrutura, plataforma e linguagem, mas deve estar familiarizado pelo menos com várias tecnologias.
 
-  -Ter conhecimento sobre o domínio do negócio: Um arquiteto deve ter certo nível de especialização no domínio do negócio. Os arquitetos de software eficientes entendem não apenas de tecnologia, mas do domínio do negócio no espaço do problema. Sem conhecimento do domínio do negócio, fica difícil entender o problema comercial, as metas e os requisitos, complicando planejar uma arquitetura eficiente para atender aos requisitos da empresa.
+  - Ter conhecimento sobre o domínio do negócio: Um arquiteto deve ter certo nível de especialização no domínio do negócio. Os arquitetos de software eficientes entendem não apenas de tecnologia, mas do domínio do negócio no espaço do problema. Sem conhecimento do domínio do negócio, fica difícil entender o problema comercial, as metas e os requisitos, complicando planejar uma arquitetura eficiente para atender aos requisitos da empresa.
   
-  -Ter Habilidades Interpessoais: Um arquiteto deve ter habilidades interpessoais excepcionais, inclusive trabalho em equipe, facilitação e liderança. Um arquiteto não deve apenas dar uma orientação técnica para a equipe, mas também liderar as equipes de desenvolvimento na implementação da arquitetura.
+  - Ter Habilidades Interpessoais: Um arquiteto deve ter habilidades interpessoais excepcionais, inclusive trabalho em equipe, facilitação e liderança. Um arquiteto não deve apenas dar uma orientação técnica para a equipe, mas também liderar as equipes de desenvolvimento na implementação da arquitetura.
   
-  -Entender e Lidar Bem com Questões Políticas: Um arquiteto deve entender o clima político da empresa e conseguir lidar bem com ele.
+  - Entender e Lidar Bem com Questões Políticas: Um arquiteto deve entender o clima político da empresa e conseguir lidar bem com ele.
  
 # DevOps 
 Entregar valor mais rápido possível ao cliente. 
