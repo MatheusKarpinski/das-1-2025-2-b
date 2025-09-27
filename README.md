@@ -4,6 +4,9 @@
 - [Livro Fundamentos da Arquitetura de Software](https://integrada.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/2[%3Bvnd.vst.idref%3Dcover]!/4/2/2%4051:77)
 - [Livro Código Limpo](https://integrada.minhabiblioteca.com.br/reader/books/9788550816043/pageid/0)
 - [Livro Padrões de Projeto](https://integrada.minhabiblioteca.com.br/reader/books/9788577800469/pageid/0)
+- [Site DESIGN PATTERNS](https://refactoring.guru/pt-br/design-patterns)
+- [Introdução a DevOps](https://learn.microsoft.com/pt-br/training/modules/introduction-to-devops/2-what-is-devops?ns-enrollment-type=learningpath&ns-enrollment-id=learn.wwl.az-400-work-git-for-enterprise-devops )
+
 
 
 
@@ -88,15 +91,22 @@ SOLID - Liskov
 
 # Aula 18/08/2025
 
-- DESIGN PATTERNS são soluções que foram criadas e documentadas em linguagem orientada a objetos para resolver problemas comuns durante o desenvolvimento de sistemas
+- DESIGN PATTERNS: São soluções que foram criadas e documentadas em linguagem orientada a objetos para resolver problemas comuns durante o desenvolvimento de sistemas
+- Singleton: É uma variável única e global dentro do sistema, nunca poderá ter dois dele. É considerado um anti-pattern. Obs: eviter usar pois pode gerar débito técnico no futuro.
+
+# Aula 28/08/2025
+
+- Características da Arquitetura: São os requisitos não funcionais da Engenharia de Software (Disponibilidade, Segurança, Desempenho, Escalabilidade,etc...). É impossível escrever um programa que tenha todas as características arquiteturais, 100% certo, porém é de extrema importância hoje em dia priorizar Segurança do que os outros.
+
+- Decisões da Arquitetura: É quando o arquiteto toma as decisões de qual modelo de arquitetura o software vai utilizar, qual linguagem de programação, qual framework, etc...
+
+- Princípios do Design: São os conjuntos de boas práticas. É o SOLID, encapsulamento, baixo acoplamento, coesão e etc... 
 
 # Aula 01/09/2025
 
-Características da arquitetura são requisitos não funcionais
-
 Expectativas de um Arquiteto de Software:
 
-  -Tomar Decisões de Arquitetura: Orientação é a palavra de ordem em primeiro plano. Ele(arquiteto) é o cabeça da equipe e por isso orienta o que eles devem fazer.
+  -Tomar Decisões de Arquitetura: Orientação é a palavra de ordem em primeiro plano. O arquiteto é o cabeça da equipe e por isso orienta o que a equipe deve fazer.
   
   -Analisar Continuamente a Arquitetura (software é vivo): deve analisar continuamente a arquitetura e o ambiente de tecnologia atual, para então recomendar soluções de melhorias. Pensar nas evoluções e aplicá-las
   -Manter-se atualizado com as últimas tendências
@@ -130,9 +140,6 @@ Ao adotar práticas de DevOps:
   
   -Implantação com mais frequência.
   
-https://learn.microsoft.com/pt-br/training/modules/introduction-to-devops/2-what-is-devops?ns-enrollment-type=learningpath&ns-enrollment-id=learn.wwl.az-400-work-git-for-enterprise-devops 
-
-
 # Aula 04/09/2025
 
 Arquiteto vs Desenvolvedor: Um arquiteto é responsavel pela definição do sistema que será usado, padrões e estilos que serão utilizados, linguagem, etc. Ja um desenvolvedor cuidará da parte interna depois da estruturação do projeto, os seus componentes que foram definidos. Nem sempre o que um arquiteto planejar vai funcionar da melhor forma na parte de desenvolvimento e nem sempre as aplicações que utilizarem no desenvolvimento vão estar dentro da definição inicial da arquitetura, para que a arquitetura e desenvolvimento funcionem da melhor forma o ideal é fazer com que a relação entre eles seja bidirecional com comunicação constante para as duas partes se adequem em um consenso.
@@ -157,6 +164,6 @@ Como é a formação do conhecimento de um arquiteto modelo T: Um arquiteto de s
 - controller < api rest
 - SETA FECHADA E LINHA CHEIA VIRA VARIAVEL
 - SETA VAZIA E LINHA CHEIA VIRA HERANÇA
-- SETA VAZIA LINHA PONTILHADA VIRA INTERFACE
+- SETA VAZIA E LINHA PONTILHADA VIRA INTERFACE
 - Interface não tem código, é um contrato que diz o código que deve ter.
-- Static - É carregado primeiro na memória
+- Static - É carregado por primeiro, antes de todas as outras coisa na memória.
