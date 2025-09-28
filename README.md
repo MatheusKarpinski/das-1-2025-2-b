@@ -143,6 +143,22 @@ Arquitetura vs Design: Arquitetura é responsavel pelas caracteristicas do siste
 
 Como é a formação do conhecimento de um arquiteto modelo T: Um arquiteto de software deve ter uma boa amplitude técnica, ou seja, conhecer diversas áreas da programação. Porém ao mesmo tempo ele deve ter uma boa profundidade técnica, ou seja, conhecer bem cada área da programação de forma individual. Então, um bom arquiteto de software deve equilibrar seu conhecimento, saber muito e saber bem de cada coisa.
 
+# Aula 08/09/2025
+
+# Trade-offs
+
+- Pensar como arquiteto é ver os trade-offs em toda solução, técnica ou outra, e analisá-las para determinar qual é a melhor solução
+
+# Tópico
+
+- Um publisher envia uma mensagem para o Tópico (Broker) e todos os subscribers recebem a mesma mensagem. Ou seja, toda vez que alguém publica uma mensagem no tópico, todo mundo que está inscrito, todos os computadores ou sistemas recebem a mesma mensagem.
+
+# Fila
+- Um publisher (sender) envia uma mensagem para a Fila (caixinha de correio) e cada subscriber (receivers) deve ir até a Fila para receber a mensagem. A Fila armazena a mensagem e fica disponível para regaste o tempo todo.
+
+# Diferença entre Tópio e Fila
+
+- No Tópico temos menor acoplamento, porém o publisher precisa atender as necessidades de todos os subscribers. Já na Fila, o acoplamento é maior, porém o publisher (sender) consegue dividir a mensagem para atender apenas a necessidade especificas dos subscribers (receivers).
 
 
 
