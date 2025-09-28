@@ -14,7 +14,7 @@ public class Cliente {
         grupoFamilia.subscribe(huguinho);
         grupoFamilia.subscribe(tia);
 
-        grupoFamilia.setMainState("BOM DIAAA ❤️❤️❤️");
+        grupoFamilia.setMainState("BOM DIAAA");
         //botao enviar
         grupoFamilia.notifySubscribers();
 
