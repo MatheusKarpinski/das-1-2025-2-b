@@ -3,11 +3,11 @@ package br.univille;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class Janelinha extends JFrame {
+public class janelinha extends JFrame {
 
     private JButton botaozinho;
     private Controlador controlador;
-    public Janelinha() {
+    public janelinha() {
         String titulo = "Janelinha";
         setTitle(titulo);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -21,7 +21,7 @@ public class Janelinha extends JFrame {
         setVisible(true);
     }
     public static void main(String[] args) {
-        new Janelinha();
+        new janelinha();
     }
     
 }
