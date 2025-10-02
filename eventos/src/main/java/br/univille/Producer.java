@@ -1,24 +1,16 @@
 package br.univille;
 
 import com.azure.core.amqp.AmqpTransportType;
-import com.azure.identity.DefaultAzureCredential;
-import com.azure.identity.DefaultAzureCredentialBuilder;
 import com.azure.messaging.servicebus.ServiceBusClientBuilder;
 import com.azure.messaging.servicebus.ServiceBusMessage;
 import com.azure.messaging.servicebus.ServiceBusSenderClient;
 
-public class Publisher {
+public class Producer {
     public static void main(String[] args) {
-        var topicName = "topic-das1-b";
-        var servidor = "sbdas12025a.servicebus.windows.net";
-        
-        
+        var servidor = "sb-das1-2025.servicebus.windows.net";
+        var chave = System.getenv("CHAVE");
+        var queue = "queue-matheuskarpinski";
 
-        //DefaultAzureCredential credential = 
-        //    new DefaultAzureCredentialBuilder().build();
-
-        String chave = System.getenv("CHAVE");
-        
         ServiceBusSenderClient senderClient =
             new ServiceBusClientBuilder()
                 .fullyQualifiedNamespace(servidor)
@@ -26,11 +18,17 @@ public class Publisher {
                 //.credential(credential)
                 .connectionString(chave)
                 .sender()
-                .topicName(topicName)
+                .queueName(queue)
                 .buildClient();
         
         senderClient.sendMessage(
             new ServiceBusMessage(
-                "walter: eu nao acredito 1234"));
+                "1: mensagem"));
+        senderClient.sendMessage(
+            new ServiceBusMessage(
+                "2: eu nao acredito"));
+        senderClient.sendMessage(
+            new ServiceBusMessage(
+                "3: agora vai"));
     }
 }
