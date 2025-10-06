@@ -178,3 +178,12 @@ Formação do conhecimento de um arquiteto modelo T: Um arquiteto de software de
 - SETA VAZIA E LINHA PONTILHADA VIRA INTERFACE
 - Interface não tem código, é um contrato que diz o código que deve ter.
 - Static - É carregado por primeiro, antes de todas as outras coisas na memória.
+
+
+
+
+# 2 BIMESTRE
+
+# Aula 06/10/25
+
+
