@@ -186,4 +186,22 @@ Formação do conhecimento de um arquiteto modelo T: Um arquiteto de software de
 
 # Aula 06/10/25
 
+Definição das Características da Arquitetura de Software
 
+A arquitetura de software vai além da definição dos requisitos funcionais, abrangendo também aspectos estruturais e operacionais que influenciam diretamente o sucesso do sistema. Esses aspectos são denominados características da arquitetura, e representam critérios de design essenciais que definem como o software deve operar e se comportar, independentemente das funções do domínio.
+
+Uma característica da arquitetura deve:
+
+- Especificar uma consideração de design fora do domínio do problema;
+- Influenciar algum aspecto estrutural do design;
+- Ser essencial ou importante para o sucesso da aplicação.
+Essas características podem ser explícitas (descritas nos requisitos) ou implícitas (necessárias, mas não documentadas). Os arquitetos precisam identificá-las e equilibrá-las, pois cada decisão pode afetar outras áreas do sistema (trade-off).
+
+As características se dividem em três grandes grupos:
+
+- Operacionais: Relacionadas ao funcionamento e desempenho do sistema, como disponibilidade, continuidade, desempenho, recuperabilidade, confiabilidade, robustez e escalabilidade.
+- Estruturais: Voltadas à qualidade interna do código, incluindo modularidade, manutenção, portabilidade, reutilização e capacidade de atualização.
+- Transversais: Englobam requisitos de segurança, acessibilidade, legalidade, privacidade, usabilidade, autenticação e autorização, entre outros.
+
+Não há uma lista universal dessas características, pois cada organização define as suas conforme o contexto e as necessidades do projeto. Entretanto, normas como as da ISO classificam-nas em categorias como desempenho, compatibilidade, usabilidade, confiabilidade, segurança, manutenibilidade e portabilidade.
+Por fim, o arquiteto deve evitar buscar a “melhor” arquitetura, mas sim a arquitetura menos pior, ou seja, aquela que equilibra as necessidades do sistema com a complexidade do design. A arquitetura ideal é iterativa e adaptável, permitindo ajustes constantes conforme o software evolui.
