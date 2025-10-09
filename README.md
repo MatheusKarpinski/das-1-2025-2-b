@@ -219,4 +219,5 @@ Existem 3 estados do Circuit Breaker:
 
 - Meio-Aberto: Um número limitado de solicitações da aplicação pode passar e invocar a operação. Se essas solicitações forem bem-sucedidas, o disjuntor assume que a falha que causou a falha foi corrigida e o disjuntor comuta para o estado Fechado . O contador de falhas é zerado. Se alguma solicitação falhar, o disjuntor assume que a falha ainda está presente e, portanto, retorna ao estado Aberto . Ele reinicia o temporizador de tempo limite para que o sistema possa se recuperar da falha.
 
-![Circuit-Breaker]([https://exemplo.com/imagem.png](https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/circuit-breaker-diagram.png#lightbox))
+![Circuit-Breaker](imagens/circuit-breaker-diagram.png)
+
