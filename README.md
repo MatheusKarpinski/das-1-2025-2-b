@@ -205,3 +205,18 @@ As características se dividem em três grandes grupos:
 
 Não há uma lista universal dessas características, pois cada organização define as suas conforme o contexto e as necessidades do projeto. Entretanto, normas como as da ISO classificam-nas em categorias como desempenho, compatibilidade, usabilidade, confiabilidade, segurança, manutenibilidade e portabilidade.
 Por fim, o arquiteto deve evitar buscar a “melhor” arquitetura, mas sim a arquitetura menos pior, ou seja, aquela que equilibra as necessidades do sistema com a complexidade do design. A arquitetura ideal é iterativa e adaptável, permitindo ajustes constantes conforme o software evolui.
+
+# Aula 09/10/25
+
+# Padrão do Disjuntor 
+
+O padrão Circuit Breaker ajuda a lidar com falhas que podem levar períodos variados para serem recuperadas quando um aplicativo se conecta a um serviço ou recurso remoto. Um disjuntor bloqueia temporariamente o acesso a um serviço com defeito após detectar falhas. Essa ação evita tentativas repetidas sem sucesso, permitindo que o sistema se recupere com eficácia. Esse padrão pode melhorar a estabilidade e a resiliência de um aplicativo.
+Existem 3 estados do Circuit Breaker:
+
+- Fechado: A solicitação do aplicativo é roteada para a operação. O proxy mantém uma contagem do número de falhas recentes. Se a chamada para a operação não for bem-sucedida, o proxy incrementa essa contagem. Se o número de falhas recentes exceder um limite especificado dentro de um determinado período, o proxy é colocado no estado Aberto e inicia um temporizador de tempo limite. Quando o temporizador expira, o proxy é colocado no estado Meio Aberto .
+
+- Aberto: A solicitação do aplicativo falha imediatamente e uma exceção é retornada ao aplicativo.
+
+- Meio-Aberto: Um número limitado de solicitações da aplicação pode passar e invocar a operação. Se essas solicitações forem bem-sucedidas, o disjuntor assume que a falha que causou a falha foi corrigida e o disjuntor comuta para o estado Fechado . O contador de falhas é zerado. Se alguma solicitação falhar, o disjuntor assume que a falha ainda está presente e, portanto, retorna ao estado Aberto . Ele reinicia o temporizador de tempo limite para que o sistema possa se recuperar da falha.
+
+![Circuit-Breaker]([https://exemplo.com/imagem.png](https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/circuit-breaker-diagram.png#lightbox)
