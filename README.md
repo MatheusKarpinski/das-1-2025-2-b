@@ -186,7 +186,7 @@ Formação do conhecimento de um arquiteto modelo T: Um arquiteto de software de
 
 # Aula 06/10/25
 
-Definição das Características da Arquitetura de Software
+# Definição das Características da Arquitetura de Software
 
 A arquitetura de software vai além da definição dos requisitos funcionais, abrangendo também aspectos estruturais e operacionais que influenciam diretamente o sucesso do sistema. Esses aspectos são denominados características da arquitetura, e representam critérios de design essenciais que definem como o software deve operar e se comportar, independentemente das funções do domínio.
 
