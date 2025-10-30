@@ -223,7 +223,7 @@ Existem 3 estados do Circuit Breaker:
 
 # Aula 13/10/2025
 
-#Command Query Responsibility Segregation (CQRS)
+# Command Query Responsibility Segregation (CQRS)
 
 É um padrão de design que segrega operações de leitura e gravação de um armazenamento de dados em modelos de dados separados. Essa abordagem permite que cada modelo seja otimizado de forma independente e pode melhorar o desempenho, a escalabilidade e a segurança de um aplicativo. Ou seja, divide as operações de escrita e leitura em dois bancos de dados, dividindo a carga para os dois bancos.
 
