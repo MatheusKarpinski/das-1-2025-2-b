@@ -240,3 +240,6 @@ Problemas do CQRS:
 - Maior complexidade: O conceito principal do CQRS é simples, mas pode introduzir uma complexidade significativa no design do aplicativo, especificamente quando combinado com o padrão de Fornecimento de Eventos.
 - Desafios de mensagens: O sistema de mensagens não é um requisito para o CQRS, mas geralmente você o usa para processar comandos e publicar eventos de atualização. Quando as mensagens são incluídas, o sistema deve considerar possíveis problemas, como falhas de mensagem, duplicatas e novas tentativas. Para obter mais informações sobre estratégias para lidar com comandos que têm prioridades variadas, consulte As filas de prioridade.
 - Consistência eventual: Quando os bancos de dados de leitura e os bancos de dados de gravação são separados, os dados de leitura podem não mostrar as alterações mais recentes imediatamente. Esse atraso resulta em dados obsoletos. Garantir que o repositório de modelos de leitura permaneça atualizado com as alterações no repositório de modelos de gravação pode ser desafiador. Além disso, detectar e manipular cenários em que um usuário age em dados obsoletos requer uma consideração cuidadosa.
+
+# Fundamentos dos Padrões de Arquiteturas
+  
