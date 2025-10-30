@@ -184,7 +184,7 @@ Formação do conhecimento de um arquiteto modelo T: Um arquiteto de software de
 
 # 2 BIMESTRE
 
-# Aula 06/10/25
+# Aula 06/10/2025
 
 # Definição das Características da Arquitetura de Software
 
@@ -206,7 +206,7 @@ As características se dividem em três grandes grupos:
 Não há uma lista universal dessas características, pois cada organização define as suas conforme o contexto e as necessidades do projeto. Entretanto, normas como as da ISO classificam-nas em categorias como desempenho, compatibilidade, usabilidade, confiabilidade, segurança, manutenibilidade e portabilidade.
 Por fim, o arquiteto deve evitar buscar a “melhor” arquitetura, mas sim a arquitetura menos pior, ou seja, aquela que equilibra as necessidades do sistema com a complexidade do design. A arquitetura ideal é iterativa e adaptável, permitindo ajustes constantes conforme o software evolui.
 
-# Aula 09/10/25
+# Aula 09/10/2025
 
 # Padrão do Disjuntor 
 
@@ -221,3 +221,22 @@ Existem 3 estados do Circuit Breaker:
 
 ![Circuit-Breaker](imagens/circuit-breaker-diagram.png)
 
+# Aula 13/10/2025
+
+#Command Query Responsibility Segregation (CQRS)
+
+É um padrão de design que segrega operações de leitura e gravação de um armazenamento de dados em modelos de dados separados. Essa abordagem permite que cada modelo seja otimizado de forma independente e pode melhorar o desempenho, a escalabilidade e a segurança de um aplicativo. Ou seja, divide as operações de escrita e leitura em dois bancos de dados, dividindo a carga para os dois bancos.
+
+Benefícios do CQRS:
+
+- Dimensionamento independente: O CQRS permite que os modelos de leitura e os modelos de gravação sejam dimensionados de forma independente. Essa abordagem pode ajudar a minimizar a contenção de bloqueio e melhorar o desempenho do sistema sob carga.
+- Esquemas de dados otimizados: As operações de leitura podem usar um esquema otimizado para consultas. As operações de gravação usam um esquema otimizado para atualizações.
+- Segurança: Ao separar leituras e gravações, você pode garantir que somente as entidades ou operações de domínio apropriadas tenham permissão para executar ações de gravação nos dados.
+- Separação de preocupações: Separar as responsabilidades de leitura e gravação resulta em modelos mais limpos e mantenedíveis. O lado de gravação normalmente lida com a lógica de negócios complexa. O lado de leitura pode permanecer simples e focado na eficiência das consultas.
+- Consultas mais simples: Quando você armazena uma exibição materializada no banco de dados de leitura, o aplicativo pode evitar junções complexas quando consulta.
+
+Problemas do CQRS:
+
+- Maior complexidade: O conceito principal do CQRS é simples, mas pode introduzir uma complexidade significativa no design do aplicativo, especificamente quando combinado com o padrão de Fornecimento de Eventos.
+- Desafios de mensagens: O sistema de mensagens não é um requisito para o CQRS, mas geralmente você o usa para processar comandos e publicar eventos de atualização. Quando as mensagens são incluídas, o sistema deve considerar possíveis problemas, como falhas de mensagem, duplicatas e novas tentativas. Para obter mais informações sobre estratégias para lidar com comandos que têm prioridades variadas, consulte As filas de prioridade.
+- Consistência eventual: Quando os bancos de dados de leitura e os bancos de dados de gravação são separados, os dados de leitura podem não mostrar as alterações mais recentes imediatamente. Esse atraso resulta em dados obsoletos. Garantir que o repositório de modelos de leitura permaneça atualizado com as alterações no repositório de modelos de gravação pode ser desafiador. Além disso, detectar e manipular cenários em que um usuário age em dados obsoletos requer uma consideração cuidadosa.
