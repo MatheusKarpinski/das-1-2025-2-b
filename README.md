@@ -263,3 +263,15 @@ Esse padrão consiste em repetir a execução de uma operação que falhou, real
 - Quantidade máxima de tentativas: Define um limite para impedir ciclos infinitos de repetição.
 
 - Tratamento de falhas específicas: Apenas erros transitórios são submetidos ao retry, enquanto falhas permanentes são imediatamente reportadas.
+
+# Aula 20/10/2025
+
+# Arquitetura em Camadas
+
+É um estilo arquitetural bastante comum, simples, econômico e intuitivo para equipes organizadas por especialidades (interface, lógica de negócio, BDA). Costuma ser utilizado como ponto inicial em muitos projetos.
+
+- Topologia: Geralmente é composta por quatro níveis: camada de apresentação, camada de negócio, camada de persistência e camada de dados. Dependendo do porte da aplicação, essas camadas podem ser unificadas ou mantidas separadas.
+- Camada de Isolamento: Em camadas fechadas, a comunicação ocorre somente com a camada diretamente vizinha, garantindo baixo acoplamento e facilitando alterações pontuais. Já camadas abertas ampliam o acoplamento e tornam o sistema mais frágil.
+- Limites: Funciona bem para sistemas pequenos ou quando ainda não há requisitos muito definidos. Porém, apresenta desempenho abaixo do ideal, pouca escalabilidade e manutenção complexa em aplicações maiores. Também é suscetível ao antipadrão “sinkhole”, no qual as camadas apenas encaminham dados sem adicionar lógica significativa.
+- Classificações das Características da Arquitetura: A arquitetura em camadas destaca-se pelo baixo custo e pela simplicidade, já que, por ser monolítica, evita a complexidade típica de sistemas distribuídos e tende a ser fácil de entender e manter. Porém, essas vantagens diminuem conforme a aplicação cresce, tornando-se mais complexa. A implementabilidade e a testabilidade são fracas, pois até pequenas mudanças exigem a recompilação e o redesenvolvimento de toda a unidade, aumentando o risco e dificultando a execução de testes completos. A confiabilidade é apenas mediana: embora não enfrente problemas de rede como arquiteturas distribuídas, sofre com os riscos inerentes a um sistema monolítico pouco testado. A escalabilidade e a tolerância a falhas são muito baixas devido à falta de modularidade; problemas simples podem derrubar toda a aplicação, e o tempo de recuperação costuma ser alto. Além disso, o desempenho não é ideal, já que esse estilo não favorece paralelismo e frequentemente apresenta camadas que apenas repassam dados sem agregar lógica.
+
