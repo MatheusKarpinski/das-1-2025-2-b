@@ -249,4 +249,17 @@ Os estilos de arquitetura, por vezes chamados de padrões de arquitetura, descre
 - Cliente/Servidor: Um estilo fundamental na arquitetura que separa a funcionalidade técnica entre front-end e back-end, chamada de arquitetura de duas camadas ou cliente/servidor.
 - Desktop + servidor de banco de dados: Uma primeira arquitetura de computador pessoal encorajava que os desenvolvedores escrevessem aplicações desktop avançadas nas interfaces do usuário, como Windows, separando os dados em um servidor do banco de dados à parte. Essa arquitetura coincidiu com o surgimento de servidores do banco de dados independentes que podiam se conectar via protocolos de rede padrão. Permitia que a lógica de apresentação residisse no desktop, enquanto as ações mais intensas computacionalmente (em volume e complexidade) ocorria nos serviços de banco de dados mais robustos.
 - Navegador + servidor web: O navegador web se conecta ao servidor web (que se conecta a um servidor de banco de dados). A separação das responsabilidades lembrava a variante de desktop, mas com clientes ainda mais leves, como navegadores, permitindo uma distribuição mais ampla tanto dentro quanto fora dos firewalls. Mesmo que o banco de dados fosse separado do servidor web, muitas vezes os arquitetos ainda consideravam isso uma arquitetura com duas camadas porque os serviços web e de banco de dados rodavam em uma classe de máquina dentro do centro de operações e a interface de usuário rodava no navegador do usuário.
-  
+
+# Aula 16/10/2025
+
+# Retry Pattern
+
+O Retry Pattern é um padrão de arquitetura aplicado para aumentar a resiliência de sistemas distribuídos e aplicações, especialmente em cenários onde podem ocorrer falhas temporárias — como instabilidades de rede, timeout de respostas ou indisponibilidade momentânea de serviços.
+
+Esse padrão consiste em repetir a execução de uma operação que falhou, realizando novas tentativas antes de considerar a ação como definitivamente mal-sucedida. Geralmente, essas tentativas são acompanhadas por:
+
+- Intervalos entre as tentativas: Podem ser fixos ou progressivos (como no exponential backoff), ajudando a evitar uma sobrecarga no sistema.
+
+- Quantidade máxima de tentativas: Define um limite para impedir ciclos infinitos de repetição.
+
+- Tratamento de falhas específicas: Apenas erros transitórios são submetidos ao retry, enquanto falhas permanentes são imediatamente reportadas.
