@@ -282,7 +282,7 @@ Uma forma básica de particionar o sistema entre front-end e back-end. Ele surgi
 
 Arquitetura Pipeline é um estilo em que o processamento é dividido em etapas sequenciais (filtros), onde cada etapa recebe dados, transforma e passa adiante, tornando o sistema simples, modular e fácil de entender.
 
-![Pipeline](imagens/fosa_1101.png)
+![Circuit-Breaker](imagens/circuit-breaker-diagram.png)
 
 - Estrutura: A topologia da arquitetura pipeline consiste em canais e filtros. Os canais e os filtros coordenam-se de um modo específico, com os canais formando uma comunicação unidirecional entre os filtros, em geral de ponto a ponto.
 - Canais: Os pipes nessa arquitetura formam o canal de comunicação entre os filtros. Cada canal normalmente é unidirecional e de ponto a ponto por motivos de desempenho, aceitando a entrada de uma fonte e sempre direcionando a saída para outra. O payload que passa nos canais pode estar em qualquer formato de dados, mas os arquitetos preferem quantidades menores de dados para permitir um alto desempenho.
