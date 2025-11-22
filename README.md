@@ -242,4 +242,55 @@ Problemas do CQRS:
 - Consistência eventual: Quando os bancos de dados de leitura e os bancos de dados de gravação são separados, os dados de leitura podem não mostrar as alterações mais recentes imediatamente. Esse atraso resulta em dados obsoletos. Garantir que o repositório de modelos de leitura permaneça atualizado com as alterações no repositório de modelos de gravação pode ser desafiador. Além disso, detectar e manipular cenários em que um usuário age em dados obsoletos requer uma consideração cuidadosa.
 
 # Fundamentos dos Padrões de Arquiteturas
-  
+
+# A Grande Bola de Lama
+
+São sistemas sem qualquer arquitetura clara, formados por código desorganizado, dependências caóticas e remendos acumulados ao longo do tempo. Nesse tipo de software, informações são compartilhadas de forma indiscriminada, regras se espalham pelo sistema inteiro e quase tudo depende de tudo, tornando o código frágil, difícil de entender e de modificar. Muitas aplicações começam pequenas e simples, mas, sem governança e sem cuidados arquiteturais, crescem de maneira desordenada até se tornarem esse antipadrão. O resultado é um sistema com baixa testabilidade, baixa implementabilidade, má escalabilidade e desempenho ruim. Alterar qualquer parte se torna arriscado, pois uma pequena mudança pode gerar efeitos colaterais imprevisíveis.
+
+# Arquitetura Unitária
+
+Estágio mais simples da evolução do software: tudo roda em um único sistema, sem divisão entre partes ou responsabilidades. Isso existia nos primeiros computadores e ainda aparece em ambientes muito restritos, como sistemas embarcados.
+
+# Cliente/Servidor
+
+Uma forma básica de particionar o sistema entre front-end e back-end. Ele surgiu conforme PCs e redes se tornaram comuns. No modelo clássico desktop + servidor de banco de dados, a interface e parte da lógica ficam no computador do usuário, enquanto o processamento pesado e os dados residem em servidores mais robustos. Com a chegada da web, esse padrão evoluiu para navegador + servidor web, no qual o navegador executa apenas a camada de apresentação e todo o processamento fica no servidor — que, por sua vez, se conecta ao banco de dados. Apesar da existência de três elementos (cliente, servidor web e banco de dados), ainda é considerado uma arquitetura de duas camadas, pois a separação essencial permanece entre interface de usuário e backend no data center.
+
+# Aula 16/10/2025
+
+# Retry Pattern
+
+É um padrão de arquitetura aplicado para aumentar a resiliência de sistemas distribuídos e aplicações, especialmente em cenários onde podem ocorrer falhas temporárias, como instabilidades de rede, timeout de respostas ou indisponibilidade momentânea de serviços. Esse padrão consiste em repetir a execução de uma operação que falhou, realizando novas tentativas antes de considerar a ação como definitivamente mal-sucedida. Essas tentativas são acompanhadas por:
+
+- Intervalos entre as tentativas: Podem ser fixos ou progressivos, ajudando a evitar uma sobrecarga no sistema.
+- Quantidade máxima de tentativas: Define um limite para impedir ciclos infinitos de repetição.
+- Tratamento de falhas específicas: Apenas erros transitórios são submetidos ao retry, enquanto falhas permanentes são imediatamente reportadas.
+
+# Aula 16/10/2025
+
+# Arquitetura em Camadas
+
+É um estilo arquitetural bastante comum, simples, econômico e intuitivo para equipes organizadas por especialidades (interface, lógica de negócio, banco de dados).
+
+- Estrutura: Geralmente é composta por quatro níveis: camada de apresentação, camada de negócio, camada de persistência e camada de dados. Dependendo do porte da aplicação, essas camadas podem ser unificadas ou mantidas separadas.
+- Isolamento: Em camadas fechadas, a comunicação ocorre somente com a camada diretamente vizinha, garantindo baixo acoplamento e facilitando alterações pontuais. Já camadas abertas ampliam o acoplamento e tornam o sistema mais frágil.
+- Limitações: Funciona bem para sistemas pequenos ou quando ainda não há requisitos muito definidos. Porém, apresenta desempenho abaixo do ideal, pouca escalabilidade e manutenção complexa em aplicações maiores. Também é suscetível ao antipadrão “sinkhole”, no qual as camadas apenas encaminham dados sem adicionar lógica significativa.
+- Classificações das Características da Arquitetura: A arquitetura em camadas se destaca pelo baixo custo e pela simplicidade, já que, por ser monolítica, evita a complexidade típica de sistemas distribuídos e tende a ser fácil de entender e manter. Porém, essas vantagens diminuem conforme a aplicação cresce, tornando-se mais complexa. A implementabilidade e a testabilidade são fracas, pois até pequenas mudanças exigem a recompilação e o redesenvolvimento de toda a unidade, aumentando o risco e dificultando a execução de testes completos. A confiabilidade é apenas mediana, embora não enfrente problemas de rede como arquiteturas distribuídas, sofre com os riscos inerentes a um sistema monolítico pouco testado. A escalabilidade e a tolerância a falhas são muito baixas devido à falta de modularidade; problemas simples podem derrubar toda a aplicação, e o tempo de recuperação costuma ser alto. Além disso, o desempenho não é ideal, já que esse estilo não favorece paralelismo e frequentemente apresenta camadas que apenas repassam dados sem agregar lógica.
+
+# Aula 27/10/2025
+
+# Arquitetura Pipeline
+
+Arquitetura Pipeline é um estilo em que o processamento é dividido em etapas sequenciais (filtros), onde cada etapa recebe dados, transforma e passa adiante, tornando o sistema simples, modular e fácil de entender.
+
+![Pipeline](imagens/fosa_1101.png)
+
+- Estrutura: A topologia da arquitetura pipeline consiste em canais e filtros. Os canais e os filtros coordenam-se de um modo específico, com os canais formando uma comunicação unidirecional entre os filtros, em geral de ponto a ponto.
+- Canais: Os pipes nessa arquitetura formam o canal de comunicação entre os filtros. Cada canal normalmente é unidirecional e de ponto a ponto por motivos de desempenho, aceitando a entrada de uma fonte e sempre direcionando a saída para outra. O payload que passa nos canais pode estar em qualquer formato de dados, mas os arquitetos preferem quantidades menores de dados para permitir um alto desempenho.
+- Filtros: Os filtros são autônomos e independentes dos outros filtros, em geral sem estado, e devem realizar apenas uma tarefa. As tarefas compostas devem ser lidadas por uma sequência de filtros, não apenas por um. Existem quatro tipos de filtros nesse estilo de arquitetura:
+
+- Produtor: O ponto de partida de um processo, de saída apenas, às vezes chamado de origem.
+- Transformador: Aceita a entrada, realiza opcionalmente uma transformação em algum ou todos os dados, então encaminha para o canal de saída.
+- Verificador: Aceita a entrada, testa um ou mais critérios, então produz opcionalmente uma saída, com base no teste.
+- Consumidor: O ponto de término para o fluxo do pipeline. Por vezes os consumidores persistem o resultado final do processo de pipeline para um banco de dados ou podem exibir os resultados finais em uma tela IU.
+
+- Classificações das Características da Arquitetura:  A arquitetura se destaca por ser simples, de baixo custo e modular. Embora seja monolítica, sua organização em filtros independentes permite modificar partes internas sem afetar o restante do sistema, o que melhora a implementabilidade e a testabilidade em relação à arquitetura em camadas. Ainda assim, por continuar monolítica, ela carrega limitações típicas desse modelo: confiabilidade apenas mediana (já que qualquer mudança exige testar e implantar tudo novamente), além de baixa elasticidade e escalabilidade, pois escalar partes isoladas exige técnicas complexas que não combinam bem com esse estilo. Sua tolerância a falhas também é fraca, um problema pequeno pode derrubar toda a aplicação, e a disponibilidade sofre com tempos de reinicialização longos, comuns em sistemas monolíticos.
